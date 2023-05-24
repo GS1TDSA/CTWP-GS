@@ -1,0 +1,18 @@
+print("""
+--------------** APRESENTACAO **---------------
+  Ola, Bem-vindo ao Projeto Localiza&Auxilia!
+  
+Aqui pretendemos te auxiliar da melhor maneira 
+de como se informar sobre o estado de producao 
+alimenticia de onde voce habita. Portanto faremos 
+uma serie de perguntas relacionadas a sua vida 
+pessoal.
+""")
+
+def dados():
+    print("nos informe, por gentileza")
+    nome = input(" seu nome: ")
+    data_nasc = input(" sua data de nascimento: ")
+    print(f'Seu nome e {nome} sua data de nascimento {data_nasc}')
+
+def localizacao():
