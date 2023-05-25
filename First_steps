@@ -1,18 +1,111 @@
 print("""
---------------** APRESENTACAO **---------------
-  Ola, Bem-vindo ao Projeto Localiza&Auxilia!
+---------------------** APRESENTACAO **-------------------------------
+          Olá, Bem-vindo ao Projeto Localiza&Auxilia!
   
-Aqui pretendemos te auxiliar da melhor maneira 
-de como se informar sobre o estado de producao 
-alimenticia de onde voce habita. Portanto faremos 
-uma serie de perguntas relacionadas a sua vida 
-pessoal.
+Aqui pretendemos te auxiliar da melhor maneira de como se informar sobre 
+a melhor situacao de producao alimentícia de onde voce habita. Portanto 
+faremos uma série de perguntas relacionadas a sua vida pessoal.
+
+Dicas de uso:
+- Para perguntas de sim ou não, usar 'S' para sim e 'N' para não!
+- Para perguntas que envolvam qualquer tipo de lista, responder com o número de desejo
 """)
 
 def dados():
+  print("------------------------------------------------------------")
+  print("nos informe, por gentileza")
+  nome = input(" seu nome: ")
+  data_nasc = input(" sua data de nascimento: ")
+  print("-------------------------------------")
+  print(f'''Seu nome: {nome}, e sua data de nascimento: {data_nasc}''')
+  confirmacao = input("Estão corretos?:")
+  
+  while confirmacao != "S" and confirmacao != "N":
+      print("Resposta inválida! Responder apenas com 'S' para sim e 'N' para não.") 
+      print(f'''Seu nome: {nome}, e sua data de nascimento: {data_nasc}''')
+      confirmacao = input("Estão corretos?:")
+  
+  if confirmacao == "S":
+    print("------------------------------------------------------------")
+    print("Certo! Daremos sequência a pesquisa.")
+  
+  while confirmacao == "N":
+    print("""Por favor preencha novamente os campos abaixo!""")
     print("nos informe, por gentileza")
     nome = input(" seu nome: ")
     data_nasc = input(" sua data de nascimento: ")
-    print(f'Seu nome e {nome} sua data de nascimento {data_nasc}')
+    print(f'''Seu nome: {nome}, e sua data de nascimento: {data_nasc}''')
+    confirmacao = input("Estão corretos?:")
+    if confirmacao == "S":
+      print("------------------------------------------------------------")
+      print("Certo! Daremos sequência a pesquisa.")
 
-def localizacao():
+def localizao():
+  print("""Agora nos informe o continente que você habita
+1 - America
+2 - Oceânia
+3 - Áfirca
+4 - Ásia 
+5 - Europa """)
+  continente = int(input("Continente:"))
+  
+  while continente not in range(1, 5):
+    print("Apenas número de 1 a 5!")
+    print("""Agora nos informe o continente que você habita
+1 - America
+2 - Oceânia
+3 - Áfirca
+4 - Ásia 
+5 - Europa """)
+    continente = int(input("Continente:"))
+    
+  if continente == 1:
+    print("""
+1 - Canadá
+2 - Estados Unidos
+3 - México
+4 - Belize
+5 - Costa Rica
+6 - El Salvador
+7 - Guatemala
+8 - Honduras
+9 - Nicarágua
+10 - Panamá
+11 - Antígua e Barbuda
+12 - Bahamas
+13 - Barbados
+14 - Cuba
+15 - Dominica
+16 - Granada
+17 - Haiti
+18 - Jamaica
+19 - República Dominicana
+20 - Santa Lúcia
+21 - São Cristóvão e Neves
+22- São Vicente e Granadinas
+23 - Trinidad e Tobago
+24 - América do Sul:
+25 - Bolívia
+26 - Brasil
+27 - Chile
+28 - Colômbia
+29 - Equador
+30 - Guiana
+31 - Paraguai
+32 - Peru
+33 - Suriname
+34 - Uruguai
+35 - Venezuela
+36 - Caribe (incluindo todas as ilhas!)
+- DETALHE!:Lembrando que esta lista inclui apenas os países reconhecidos internacionalmente e não abrange territórios dependentes ou não autônomos.
+    """)
+  
+
+
+def main():
+  dados()
+  localizao()
+
+
+
+main()
