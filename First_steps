@@ -41,58 +41,58 @@ def dados():
       print("Certo! Daremos sequência a pesquisa.")
 
 def localizao_macro():
-  print("""Agora nos informe o continente que você habita(Sendo as opções de 1 a três parte do continente Americano!):
-1 - América do Norte
-2 - América do Sul
-3 - América Central
-4 - Oceania
-5 - Áfirca
-6 - Ásia 
-7 - Europa """)
-  continente = int(input("Continente:"))
-  
-  while continente not in range(1, 8):
-    print("Apenas número de 1 a 7!")
     print("""Agora nos informe o continente que você habita:
-1 - América do Norte
-2 - América do Sul
-3 - América Central
-4 - Oceania
-5 - Áfirca
-6 - Ásia 
-7  - Europa """)
+1 - América 
+2 - Oceania
+3 - Áfirca
+4 - Ásia
+5 - Europa """)
     continente = int(input("Continente:"))
-    
-  if continente == 1:
-    print("Certo! Nosso projeto permite do continente Americano (do Norte) apenas os Estados Unidos, pois é um país de dimensões continentais, abrangendo muitos contextos.")
-
-  elif continente == 2:
-    print("Certo! Nosso projeto permite do continente Americano (do Sul) apenas o Brasil, pois é um país de dimensões continentais, abrangendo muitos contextos.")
-
-  elif continente == 3:
-    print("Certo! Dentro da América Central não existem países continentais, porém pegamos a ilha de Cuba para representar o continente americano (central) pela sua vasta biodiversidade.")  
   
-  elif continente == 4:
-    print("Certo! Nosso projeto permite do continente da Oceania apenas a Austrália, pois é um país de dimensões continentais,abrangendo muitos contextos.")
+    while continente not in range(1, 6):
+        print("Apenas número de 1 a 5!")
+        print("""Agora nos informe o continente que você habita:
+1 - América 
+2 - Oceania
+3 - Áfirca
+4 - Ásia
+5 - Europa """)
+        continente = int(input("Continente:"))
+    
+    if continente == 1:
+        print("""Certo! dentro da américa, temos três opções de países representando cada país uma divisão da américa, sendo elas:
+1 - Estados Unidos
+2 - Cuba
+3 - Brasil
+""")
 
-  elif continente == 5:
-    print("""
+    elif continente == 2:
+        print("Certo! Nosso projeto permite do continente da Oceania apenas a Austrália, pois é um país de dimensões continentais,abrangendo muitos contextos.")
+
+    elif continente == 3:
+        print("""
 Pela sua imensa extensão longitudinal, da África abrangeremos 3 países, com 3 predominâncias climáticas e de biomas diferntes, sendo eles:
 1 - Egito
 2 - República Democrática do Congo
 3 - África do Sul
     """)
+    elif continente == 4:
+        print("Certo! Nosso projeto permite do continente Asiático apenas a China, pois é um país de dimensões continentais, abrangendo muitos contextos.")
 
-  elif continente == 6:
-    print("Certo! Nosso projeto permite do continente Asiático apenas a China, pois é um país de dimensões continentais, abrangendo muitos contextos.")
+    elif continente == 5:
+        print("""Pela sua grande quantidade de países e diferentes contextos, decidimos dividir a Europa em:
+1 - Inglaterra
+2 - França
+""")
 
-
-
+def localizacao_media():
+        print()
 
 
 def main():
   dados()
   continente = localizao_macro()
+  
 
 
 
