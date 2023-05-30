@@ -111,20 +111,83 @@ def localizacao_media(pais):
   match pais:
     #Brasil ---- região
     case 1: 
-      print("""Certo, agora selecione a região a qual você pertence
+        print("""Certo, agora selecione a região a qual você pertence
 1 - Norte
 2 - Nordeste
 3 - Centro-Oeste
 4 - Sudeste
 5 - Sul""")
-      
+
+    case 2:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Centro
+2 - Leste 
+3 - Oeste""")
+
+    case 3:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Oeste
+2 - Centro-oeste
+3 - Nordeste
+4 - Sul""")
+
+    case 4:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Ocidental
+2 - Norte 
+3 - Meridional 
+4 - Oriental""")
+
+    case 5:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Norte
+2 - Sul
+3 - Leste
+4 - Oeste""")
+
+    case 6:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Norte
+2 - Sul
+3 - Leste
+4 - Oeste""")
+
+    case 7:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Norte
+2 - Sul
+3 - Leste
+4 - Oeste""")
+
+    case 8:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Noroeste
+2 - Nordeste 
+3 - Oriental  
+4 - Centro-Sul
+5 - Sudoeste 
+6 - Norte """)
+
+    case 9:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Norte
+2 - Sul
+3 - Leste
+4 - Oeste""")
+
+    case 10:
+        print("""Certo, agora selecione a região a qual você pertence
+1 - Norte
+2 - Sul
+3 - Leste
+4 - Oeste""")
       
   regiao = int(input("Escolha uma:"))
   
   print("------------------------------------------------------------")
 
   return regiao
-  
+      
 def selecao_bioma(regiao):
   
   match regiao:
