@@ -6,5 +6,5 @@
   
 # SOLUÇÃO PROPOSTA
   O objetivo da solução é *entender, minimamente, o contexto que a pessoa está inserida geograficamente*, dando foco para agricultores de
-  pequeno porte, para assim auxiliar ela nos tópicos: *Tipo de plantio*, *Tipos de alimentos desses plantios*, *técnica de plantação mais adequada*, 
-  *Centros comerciais próximos*, *Meios de transporte mais adequados*.
+  pequeno porte, para assim auxiliar ela nos tópicos: **Tipo de plantio, Tipos de alimentos desses plantios, técnica de plantação mais adequada, 
+  Centros comerciais próximos, Meios de transporte mais adequados**.
