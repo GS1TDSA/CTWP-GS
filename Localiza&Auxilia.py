@@ -22,7 +22,7 @@ def cadastro_pessoais_usuario():
   
   while confirmacao != "S" and confirmacao != "N":
     print("Resposta inválida! Responder apenas com 'S' para sim e 'N' para não.") 
-    print(f'''Seu nome: {nome}, e sua data de nascimento: {data_nasc}''')
+    print(f'''Seu nome: {nome}, sua data de nascimento: {data_nasc} e seu e-mail:{e_mail}''')
     confirmacao = input("Estão corretos?:")
   
   return confirmacao
