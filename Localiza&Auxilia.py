@@ -3,20 +3,16 @@ print("""
           Olá, Bem-vindo ao Projeto Localiza&Auxilia!
   
 Aqui pretendemos te auxiliar da melhor maneira de como se informar sobre 
-a melhor situacao de producao alimentícia de onde voce habita. Portanto 
+a situação de produção, venda e transportes alimentícios de onde você habita, portanto 
 faremos uma série de perguntas relacionadas a sua vida pessoal.
-
-Dicas de uso:
-- Para perguntas de sim ou não, usar 'S' para sim e 'N' para não!;
-- Para perguntas que envolvam qualquer tipo de lista, responder com o número de desejo.
 """)
 
 def cadastro_pessoais_usuario():
   
   print("------------------------------------------------------------")
-  print("nos informe, por gentileza")
-  nome = input(" seu nome: ")
-  data_nasc = input(" sua data de nascimento: ")
+  print("nos informe, por gentileza(dados obrigatórios!)")
+  nome = input("seu nome: ")
+  data_nasc = input("sua data de nascimento: ")
   e_mail = input("E-mail:")
   list = [nome, data_nasc, e_mail]
   print("-------------------------------------")
@@ -40,9 +36,10 @@ def localizao_macro(confirmacao):
   while confirmacao == "N":
     print("""Por favor preencha novamente os campos abaixo!""")
     print("nos informe, por gentileza")
-    nome = input(" seu nome: ")
-    data_nasc = input(" sua data de nascimento: ")
-    print(f'''Seu nome: {nome}, e sua data de nascimento: {data_nasc}''')
+    nome = input("seu nome: ")
+    data_nasc = input("sua data de nascimento: ")
+    e_mail = input("E-mail:")
+    print(f'''Seu nome: {nome}, sua data de nascimento: {data_nasc} e seu e-mail:{e_mail}''')
     confirmacao = input("Estão corretos?:")
   
   print("------------------------------------------------------------")
@@ -54,6 +51,9 @@ def localizao_macro(confirmacao):
 5 - Sul""")
      
   regiao = int(input("Escolha uma:"))
+  while regiao not in (1,5):
+      print("Escolha apenas um dos números acima!")
+      regiao = int(input("Escolha um:"))
   
   print("------------------------------------------------------------")
 
@@ -66,28 +66,46 @@ def selecao_bioma(regiao):
         print("""Escolha o bioma que você reside:
 1 - Floresta Amazônica
 2 - Cerrado(1)""")
+        bioma = int(input("Escolha um:")) 
+        while bioma not in (1,2):
+          print("Escolha apenas um dos números acima!")
+          bioma = int(input("Escolha um:"))
     
     case 2:
         print("""Escolha o bioma que você reside:
 3 - Caatinga
 4 - Mata Atlântica(1)""")
-
+        bioma = int(input("Escolha um:")) 
+        while bioma not in (3,4):
+          print("Escolha apenas um dos números acima!")
+          bioma = int(input("Escolha um:"))
+    
     case 3:
         print("""Escolha o bioma que você reside:
 5 - Cerrado(2)
 6 - Pantanal""")
+        bioma = int(input("Escolha um:")) 
+        while bioma not in (5,6):
+          print("Escolha apenas um dos números acima!")
+          bioma = int(input("Escolha um:"))
 
     case 4:
         print("""Escolha o bioma que você reside:
 7 - mata atlantica(2)
 8 - Cerrado(3)""")
+        bioma = int(input("Escolha um:")) 
+        while bioma not in (7,8):
+          print("Escolha apenas um dos números acima!")
+          bioma = int(input("Escolha um:"))
 
     case 5:
         print("""Escolha o bioma que você reside:
 9 - Mata Atlântica(3)
 10 - Pampas""")
-    
-  bioma = int(input("Escolha um:"))
+        bioma = int(input("Escolha um:")) 
+        while bioma not in (9,10):
+          print("Escolha apenas um dos números acima!")
+          bioma = int(input("Escolha um:"))
   
   print("------------------------------------------------------------")
   
