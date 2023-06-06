@@ -18,5 +18,5 @@
 # DADOS DOS INTEGRANTES:
 - Eduardo Foncesca Finardi | RM:98624
 - Angélica Melo | RM:550776
-- Matheus Roberto| RM: 98581
-- Ricardo Yuri Domingues| RM: 551808
+- Matheus Roberto | RM: 98581
+- Ricardo Yuri Domingues | RM: 551808
