@@ -1,7 +1,7 @@
 # CTWP-GS
 
 # DESCRICAO
-  O objetivo do projeto é combater a fome e às escassez de alimentos global, portanto pretendemos desenvolver uma solução que visa mapear, localizar e auxilar os diferentes contextos que as pessoas estão inseridas ao redor do globo, ja que a desinformação em relação a produção, alimentação, transporte é recorrente no cotidiano geral das populções.
+  O objetivo do projeto é combater a fome e às escassez de alimentos global, portanto pretendemos desenvolver uma solução que visa mapear, localizar e auxilar os diferentes contextos que as pessoas estão inseridas ao redor do globo, ja que a desinformação em relação a produção, venda e transporte é recorrente no cotidiano geral das populções.
 
 # PROJETO
   O projeto visa localizar as pessoas em situações de vulnerabilidade, realizar uma série de perguntas em relação ao contexto social e geografico em quem elas estão inseridas, assim disponibilizando as informações necessárias para que ela possa buscar a melhor maneira de se alimentar, produzir, transportar alimentos de acordo com a região que ela vive.
